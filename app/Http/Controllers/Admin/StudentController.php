@@ -32,6 +32,7 @@ class StudentController extends Controller
         return redirect()->route('admin.students.index')->with('success', 'Data berhasil disimpan!');
     }
 
+    // Fungsi show() yang diminta: Menampilkan detail siswa
     public function show(Student $student)
     {
         return view('admin.student.show', compact('student'));
